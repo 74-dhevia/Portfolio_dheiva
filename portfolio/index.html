@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dheiva Lakshmi T | Portfolio</title>
+  <meta name="description" content="Portfolio of Dheiva Lakshmi T, Computer Science student specializing in software development and Artificial Intelligence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Custom Cursor Dot (decorative, hidden on mobile via CSS) ===== -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ===== Navigation Bar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>DL<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-section="home">Home</a>
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#certifications" class="nav-link" data-section="certifications">Certifications</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+
+    <div class="hero-container">
+      <div class="hero-text reveal" data-reveal>
+        <p class="hero-eyebrow">
+          <span class="status-dot"></span> Available for opportunities
+        </p>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="hero-name">Dheiva Lakshmi T</span>
+        </h1>
+
+        <h2 class="hero-subtitle">
+          <span id="typedText"></span><span class="cursor-blink">|</span>
+        </h2>
+
+        <p class="hero-desc">
+          Computer Science student crafting clean, intelligent software — from
+          full-stack web apps to AI-driven systems. I turn ideas into code that works.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" id="resumeBtn" download>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.469-2.382 1.236-3.222-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.5 11.5 0 0112 5.803c1.02.005 2.047.137 3.005.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.118 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.805 5.624-5.476 5.92.43.37.814 1.1.814 2.22 0 1.604-.015 2.896-.015 3.286 0 .32.218.694.825.576C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 11.001-4.124 2.062 2.062 0 010 4.124zM7.114 20.452H3.558V9h3.556v11.452z"/></svg>
+          </a>
+          <a href="mailto:dheivalakshmi@example.com" aria-label="Email" class="social-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M4 4h16v16H4V4z" stroke="none"/><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-reveal>
+        <div class="profile-frame">
+          <div class="profile-ring"></div>
+          <div class="profile-img-wrap">
+            <img src="assets/profile.jpg" alt="Dheiva Lakshmi T" class="profile-img" />
+          </div>
+          <div class="float-chip chip-1">{ AI }</div>
+          <div class="float-chip chip-2">&lt;/&gt;</div>
+          <div class="float-chip chip-3">C++</div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-header reveal" data-reveal>
+        <p class="section-tag">Who I Am</p>
+        <h2 class="section-title">About Me</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal" data-reveal>
+          <p>
+            Welcome to my portfolio! I'm <strong>Dheiva Lakshmi T</strong>, a Computer Science
+            student with a strong interest in software development and Artificial Intelligence.
+            Through academic projects and personal learning, I've built a solid foundation in
+            <strong>C++, Java, HTML, CSS, JavaScript</strong>, and database management.
+          </p>
+          <p>
+            I enjoy breaking down complex problems into clean, working code — and I'm constantly
+            exploring how AI and emerging technologies like IoT can shape smarter, more efficient systems.
+          </p>
+
+          <div class="education-card">
+            <div class="education-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+            </div>
+            <div>
+              <h4>Education</h4>
+              <p>Kammavar Girls Higher Secondary School, Kovilpatti</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats reveal" data-reveal>
+          <div class="stat-card">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">NPTEL Certifications</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="7">0</span>
+            <span class="stat-label">Core Skills</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Featured Projects</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section class="skills" id="skills">
+    <div class="section-container">
+      <div class="section-header reveal" data-reveal>
+        <p class="section-tag">What I Work With</p>
+        <h2 class="section-title">Skills</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal" data-reveal>
+          <div class="skill-top">
+            <span class="skill-icon">⚙️</span>
+            <span class="skill-name">C++</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="85"></div></div>
+        </div>
+
+        <div class="skill-card reveal" data-reveal>
+          <div class="skill-top">
+            <span class="skill-icon">☕</span>
+            <span class="skill-name">Java</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="80"></div></div>
+        </div>
+
+        <div class="skill-card reveal" data-reveal>
+          <div class="skill-top">
+            <span class="skill-icon">🌐</span>
+            <span class="skill-name">HTML</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="90"></div></div>
+        </div>
+
+        <div class="skill-card reveal" data-reveal>
+          <div class="skill-top">
+            <span class="skill-icon">🎨</span>
+            <span class="skill-name">CSS</span>
+            <span class="skill-percent">88%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="88"></div></div>
+        </div>
+
+        <div class="skill-card reveal" data-reveal>
+          <div class="skill-top">
+            <span class="skill-icon">⚡</span>
+            <span class="skill-name">JavaScript</span>
+            <span class="skill-percent">82%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="82"></div></div>
+        </div>
+
+        <div class="skill-card reveal" data-reveal>
+          <div class="skill-top">
+            <span class="skill-icon">🤖</span>
+            <span class="skill-name">Artificial Intelligence</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="75"></div></div>
+        </div>
+
+        <div class="skill-card reveal" data-reveal>
+          <div class="skill-top">
+            <span class="skill-icon">🧩</span>
+            <span class="skill-name">Problem Solving</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="progress-track"><div class="progress-fill" data-progress="90"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects Section ===== -->
+  <section class="projects" id="projects">
+    <div class="section-container">
+      <div class="section-header reveal" data-reveal>
+        <p class="section-tag">Things I've Built</p>
+        <h2 class="section-title">Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card reveal" data-reveal>
+          <div class="project-glow"></div>
+          <div class="project-card-inner">
+            <div class="project-icon">🛒</div>
+            <h3 class="project-title">E-Commerce Cart Management System</h3>
+            <p class="project-desc">
+              A full-featured shopping cart system handling product listings, cart operations,
+              and order calculations with a focus on clean logic and data handling.
+            </p>
+            <div class="project-tags">
+              <span class="tag">C++</span>
+              <span class="tag">Java</span>
+              <span class="tag">Database</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-mini" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.469-2.382 1.236-3.222-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.5 11.5 0 0112 5.803c1.02.005 2.047.137 3.005.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.118 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.805 5.624-5.476 5.92.43.37.814 1.1.814 2.22 0 1.604-.015 2.896-.015 3.286 0 .32.218.694.825.576C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                Code
+              </a>
+              <a href="#" class="btn-mini btn-mini-fill" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-reveal>
+          <div class="project-glow"></div>
+          <div class="project-card-inner">
+            <div class="project-icon">🏠</div>
+            <h3 class="project-title">Smart Home Management System</h3>
+            <p class="project-desc">
+              An IoT-inspired application concept for monitoring and controlling home devices,
+              built with structured logic and a focus on real-world automation scenarios.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">IoT</span>
+              <span class="tag">AI</span>
+            </div>
+            <div class="project-actions">
+              <a href="#" class="btn-mini" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.469-2.382 1.236-3.222-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.5 11.5 0 0112 5.803c1.02.005 2.047.137 3.005.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.118 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.805 5.624-5.476 5.92.43.37.814 1.1.814 2.22 0 1.604-.015 2.896-.015 3.286 0 .32.218.694.825.576C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                Code
+              </a>
+              <a href="#" class="btn-mini btn-mini-fill" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Certifications Section ===== -->
+  <section class="certifications" id="certifications">
+    <div class="section-container">
+      <div class="section-header reveal" data-reveal>
+        <p class="section-tag">Continuous Learning</p>
+        <h2 class="section-title">Certifications</h2>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal" data-reveal>
+          <div class="cert-badge">Elite</div>
+          <h3 class="cert-title">Foundations of Deep Learning: Concepts and Applications</h3>
+          <p class="cert-org">NPTEL · IISc Bangalore</p>
+          <div class="cert-meta">
+            <span>Score: 66%</span>
+            <span>Jan–Apr 2026</span>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" data-reveal>
+          <div class="cert-badge">Elite</div>
+          <h3 class="cert-title">Introduction to Industry 4.0 and Industrial Internet of Things</h3>
+          <p class="cert-org">NPTEL · IIT Kharagpur</p>
+          <div class="cert-meta">
+            <span>Score: 82%</span>
+            <span>Jan–Apr 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact" id="contact">
+    <div class="section-container">
+      <div class="section-header reveal" data-reveal>
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Contact Me</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal" data-reveal>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h4>Name</h4>
+              <p>Dheiva Lakshmi T</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M22 6l-10 7L2 6"/><path d="M2 6h20v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6z"/></svg>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:dheivalakshmi@example.com">dheivalakshmi@example.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 11.001-4.124 2.062 2.062 0 010 4.124zM7.114 20.452H3.558V9h3.556v11.452z"/></svg>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <a href="https://linkedin.com/" target="_blank" rel="noopener">linkedin.com/in/dheivalakshmi</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.11.82-.26.82-.577 0-.285-.01-1.04-.015-2.04-3.338.725-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.084 1.84 1.237 1.84 1.237 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.303-5.466-1.332-5.466-5.93 0-1.31.469-2.382 1.236-3.222-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.3 1.23A11.5 11.5 0 0112 5.803c1.02.005 2.047.137 3.005.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.652.242 2.873.118 3.176.77.84 1.235 1.912 1.235 3.222 0 4.61-2.805 5.624-5.476 5.92.43.37.814 1.1.814 2.22 0 1.604-.015 2.896-.015 3.286 0 .32.218.694.825.576C20.565 21.795 24 17.298 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            </div>
+            <div>
+              <h4>GitHub</h4>
+              <a href="https://github.com/" target="_blank" rel="noopener">github.com/dheivalakshmi</a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" data-reveal id="contactForm" novalidate>
+          <div class="form-group">
+            <input type="text" id="formName" name="name" placeholder="Your Name" autocomplete="name" />
+            <span class="form-error" id="errorName"></span>
+          </div>
+
+          <div class="form-group">
+            <input type="email" id="formEmail" name="email" placeholder="Your Email" autocomplete="email" />
+            <span class="form-error" id="errorEmail"></span>
+          </div>
+
+          <div class="form-group">
+            <textarea id="formMessage" name="message" rows="5" placeholder="Your Message"></textarea>
+            <span class="form-error" id="errorMessage"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">
+            Send Message
+          </button>
+
+          <p class="form-success" id="formSuccess">Message sent! I'll get back to you soon. ✓</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="section-container footer-inner">
+      <p>&copy; <span id="year"></span> Dheiva Lakshmi T. Built with HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <!-- ===== Back to Top Button ===== -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
